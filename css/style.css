@@ -1,12 +1,12 @@
 .list{ padding: 0; }
 .list li{ display: block; height: 50px; border-bottom: solid 1px #ccc; clear: both; }
 .list li .pic,
-.list li h3{ float: left; line-height: 50px; }
+.list li h4{ float: left; line-height: 50px; }
 .list li .action{ float: right; line-height: 50px; }
 .list li .pic img{ display: block; margin-top:5px; width: 40px; height: 40px; }
-.list li h3{ margin: 0; padding-left: 20px; font-size: 14px; }
+.list li h4{ margin: 0; padding-left: 20px; font-size: 14px; }
 
-.list .list-hd h2{ margin: 15px 0 0 0; float: left; font-size: 24px; }
+.list .list-hd h3{ margin: 15px 0 0 0; float: left; font-size: 24px; }
 .list .list-hd .action{ float: right; }
 
 /* society */
