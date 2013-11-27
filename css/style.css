@@ -13,3 +13,7 @@
 .icon-society{ margin-top: 10px; display: inline-block; width: 32px; height: 32px; text-indent: -999em; background: url(../images/society.png) no-repeat; }
 .icon-society-weibo{ background-position: -32px 0; }
 .icon-society-weibo:hover{ background-position: 0 0; }
+
+
+/* detail */
+.detail{ padding-top: 40px; }
