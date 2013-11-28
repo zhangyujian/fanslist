@@ -17,7 +17,7 @@
 
 /* detail */
 .detail{ padding-top: 40px; }
-.detail-info{ padding: 0; list-style: none; }
+.detail-info{ margin-top: 10px; padding: 0; list-style: none; }
 .detail-info li{ padding: 8px; border-bottom: solid 1px #ddd; }
 .detail-info li:hover{ background: #f3f3f3; }
 .detail-info li span{ margin-left: 20px; }
