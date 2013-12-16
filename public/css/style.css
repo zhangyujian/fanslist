@@ -1,0 +1,27 @@
+.list{ padding: 0; }
+.list li{ display: block; height: 50px; border-bottom: solid 1px #ccc; clear: both; }
+.list li .pic,
+.list li h4{ float: left; line-height: 50px; }
+.list li .action{ float: right; line-height: 50px; }
+.list li .pic img{ display: block; margin-top:5px; width: 40px; height: 40px; background: url(../images/loading1.gif) no-repeat center center; }
+.list li h4{ margin: 0; padding-left: 20px; font-size: 14px; }
+
+.list .list-hd h3{ margin: 15px 0 0 0; float: left; font-size: 24px; }
+.list .list-hd .action{ float: right; }
+
+.list .share li{ height: 30px; line-height: 30px; border-bottom: 0 none; }
+
+/* society */
+.icon-society{ margin-top: 10px; display: inline-block; width: 32px; height: 32px; text-indent: -999em; background: url(../images/society.png) no-repeat; }
+.icon-society-weibo{ background-position: -32px 0; }
+.icon-society-weibo:hover{ background-position: 0 0; }
+
+
+/* detail */
+.detail{ padding-top: 40px; }
+.detail-info{ margin-top: 10px; padding: 0; list-style: none; }
+.detail-info li{ padding: 8px; border-bottom: solid 1px #ddd; }
+.detail-info li:hover{ background: #f3f3f3; }
+.detail-info li span{ margin-left: 20px; }
+
+.detail .J_click span{ padding-right: 20px; }

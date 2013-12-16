@@ -9,6 +9,8 @@
 .list .list-hd h3{ margin: 15px 0 0 0; float: left; font-size: 24px; }
 .list .list-hd .action{ float: right; }
 
+.list .share li{ height: 30px; line-height: 30px; border-bottom: 0 none; }
+
 /* society */
 .icon-society{ margin-top: 10px; display: inline-block; width: 32px; height: 32px; text-indent: -999em; background: url(../images/society.png) no-repeat; }
 .icon-society-weibo{ background-position: -32px 0; }
@@ -21,3 +23,5 @@
 .detail-info li{ padding: 8px; border-bottom: solid 1px #ddd; }
 .detail-info li:hover{ background: #f3f3f3; }
 .detail-info li span{ margin-left: 20px; }
+
+.detail .J_click span{ padding-right: 20px; }

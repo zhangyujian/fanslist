@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    .span10
+        .page-title
+            .opts.pull-right
+                a(href="/admin/friendlink-add")
+                    i.icon-plus
+                    | 添加站点
+            h3=title
+        table.table.table-bordered.table-striped
+            tr
+                th(width="230") id
+                th 名称
+                th 链接地址
+                th 操作
+            each item in Friendlinks
+                tr
+                    td #{item._id}
+                    td #{item.name}
+                    td #{item.link}
+                    td.operate
+                        a.btn.btn-mini(href="/admin/friendlink-edit/#{item._id}")
+                            i.icon-edit
+                        a.btn.btn-danger.btn-mini(href="/admin/friendlink-destroy/#{item._id}")
+                            i.icon-remove.icon-white
