@@ -1,27 +1,15 @@
 require('../db');
 var mongoose = require('mongoose'),
-    config = require('../config').config,
-    Util = require('../libs/util'),
-    Product = mongoose.model('Product'),
-    ProductCat = mongoose.model('ProductCat'),
-    Article = mongoose.model('Article'),
-    ArticleCat = mongoose.model('ArticleCat'),
-    Message = mongoose.model('Message'),
-    Friendlink = mongoose.model('Friendlink'),
-    Page = mongoose.model('Page'),
-    markdown = require('markdown').markdown;
+    config = require('../config').config;
 
 // Front page
 
 exports.index = function(req, res){
-  res.render('default/index', { title: '专注用户体验' })
+  res.render('default/index', { title: '权威粉丝榜' })
 };
-exports.sitebuild = function(req, res){
-  res.render('default/sitebuild', { title: '网站建设-唯实' })
+exports.category = function(req, res){
+  res.render('default/category', { title: '分类-权威粉丝榜' })
 };
-exports.about = function(req, res){
-  res.render('default/about', { title: '关于我们/联系我们-唯实' })
-};
-exports.solution = function(req, res){
-  res.render('default/solution', { title: '经典案例-唯实' })
+exports.detail = function(req, res){
+  res.render('default/detail', { title: '权威粉丝榜' })
 };

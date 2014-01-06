@@ -1,4 +1,4 @@
-NodeCMS
+FansList
 =======
 
-NodeCMS : try to be a CMS for company
+FansList : 权威粉丝榜单

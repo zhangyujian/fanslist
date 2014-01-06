@@ -17,6 +17,7 @@ var app = express();
 app.configure(function(){
   app.set('views', __dirname + '/views');//设置模板地址
   app.set('view engine', 'jade');//引用jade模板引擎
+  app.use(express.static(path.join(__dirname, 'public')));
   app.use(flash());
   app.use(express.cookieParser());
   app.use(express.session({
@@ -27,7 +28,7 @@ app.configure(function(){
   app.use(express.bodyParser({keepExtensions: true, uploadDir: __dirname+'/public/data/img'}));//设置上传缓存路径
   app.use(express.methodOverride());
   app.use(app.router);
-  app.use(express.static(path.join(__dirname, 'public')));
+  
 });
 
 app.configure('development', function(){
@@ -40,11 +41,9 @@ app.configure('production', function(){
 
 // Routes
 app.get('/', routes.index);
-app.get('/sitebuild', routes.sitebuild);
-app.get('/about', routes.about);
-//app.get('/productlist', routes.productlist);
-//app.get('/productdetail/:title', routes.productdetail);
-app.get('/solution', routes.solution);
+app.get('/category', routes.category);
+app.get('/detail', routes.detail);
+
 // Admin Routes
 app.get('/admin', adminRoutes.index);
 app.post('/admin/upload', adminRoutes.upload);
@@ -119,6 +118,12 @@ app.get( '/mail', adminRoutes.mail);
 //config 渲染到模板
 app.locals({
   config:config
+});
+
+app.get('*', function(req, res){
+    res.render('default/404', {
+        title: '404'
+    })
 });
 
 app.listen(config.port, function(){
